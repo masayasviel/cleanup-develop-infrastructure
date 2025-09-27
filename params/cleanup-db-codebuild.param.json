@@ -1,7 +1,11 @@
 [
   {
-    "ParameterKey": "GitHubSourceRepository",
-    "ParameterValue": "https://github.com/masayasviel/cleanup-develop"
+    "ParameterKey": "GitHubPrimarySourceRepository",
+    "ParameterValue": "https://github.com/masayasviel/cleanup-develop-codebuild"
+  },
+  {
+    "ParameterKey": "GitHubSecondarySourceRepository",
+    "ParameterValue": "https://github.com/masayasviel/cleanup-develop-master"
   },
   {
     "ParameterKey": "DBName",

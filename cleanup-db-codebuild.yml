@@ -2,9 +2,12 @@ AWSTemplateFormatVersion: "2010-09-09"
 Description: cleanup db codebuild resources
 
 Parameters:
-  GitHubSourceRepository:
+  GitHubPrimarySourceRepository:
     Type: String
-    Description: GitHub Repository Url.
+    Description: GitHub Primary Repository Url.
+  GitHubSecondarySourceRepository:
+    Type: String
+    Description: GitHub Secondary Repository Url.
   DBName:
     Type: String
     Description: Default DB Name
@@ -42,10 +45,15 @@ Resources:
     Properties:
       Name: !Join [ "-", [ cleanup, db, CodeBuild ] ]
       Source:
-        Location: !Ref GitHubSourceRepository
+        Location: !Ref GitHubPrimarySourceRepository
         Type: GITHUB
         GitCloneDepth: 1
         BuildSpec: "buildspec.yml"
+      SecondarySources:
+        Location: !Ref GitHubSecondarySourceRepository
+        Type: GITHUB
+        GitCloneDepth: 1
+        SourceIdentifier: SECONDARY
       SourceVersion: main
       Environment:
         Type: LINUX_CONTAINER
