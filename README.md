@@ -3,7 +3,6 @@
 ## CFn
 
 ```sh
-cd infrastructure
 chmod 777 create.sh update.sh
 editor ./params/{file name}
 # 拡張子は含めない
