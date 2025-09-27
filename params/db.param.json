@@ -1,0 +1,22 @@
+[
+  {
+    "ParameterKey": "DBClusterScalingMaxCapacity",
+    "ParameterValue": "64"
+  },
+  {
+    "ParameterKey": "DBClusterScalingMinCapacity",
+    "ParameterValue": "0"
+  },
+  {
+    "ParameterKey": "DBName",
+    "ParameterValue": "my_database"
+  },
+  {
+    "ParameterKey": "DBMasterId",
+    "ParameterValue": "my_user"
+  },
+  {
+    "ParameterKey": "DBMasterPassword",
+    "ParameterValue": "password0000"
+  }
+]

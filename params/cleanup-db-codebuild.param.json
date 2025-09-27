@@ -1,0 +1,18 @@
+[
+  {
+    "ParameterKey": "GitHubSourceRepository",
+    "ParameterValue": "https://github.com/masayasviel/cleanup-develop"
+  },
+  {
+    "ParameterKey": "DBName",
+    "ParameterValue": "my_database"
+  },
+  {
+    "ParameterKey": "DBMasterId",
+    "ParameterValue": "my_user"
+  },
+  {
+    "ParameterKey": "DBMasterPassword",
+    "ParameterValue": "password0000"
+  }
+]
