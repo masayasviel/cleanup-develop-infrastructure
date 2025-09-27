@@ -50,10 +50,10 @@ Resources:
         GitCloneDepth: 1
         BuildSpec: "buildspec.yml"
       SecondarySources:
-        Location: !Ref GitHubSecondarySourceRepository
-        Type: GITHUB
-        GitCloneDepth: 1
-        SourceIdentifier: SECONDARY
+        - Location: !Ref GitHubSecondarySourceRepository
+          Type: GITHUB
+          GitCloneDepth: 1
+          SourceIdentifier: SECONDARY
       SourceVersion: main
       Environment:
         Type: LINUX_CONTAINER
